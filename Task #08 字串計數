@@ -1,0 +1,19 @@
+# solution-1：一步一步想
+x = input()
+dict = {}
+value = 1
+
+for i in x:
+    dict[i]= value
+　　if x.count(i) > 1:
+        dict[i] = x.count(i)
+print(dict)
+
+
+# solution-2：簡化
+x = input()
+dict = {}
+
+for i in x:
+    dict[i]= x.count(i)
+print(dict)
