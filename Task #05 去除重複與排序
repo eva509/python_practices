@@ -1,0 +1,16 @@
+#方法一
+L = [1, 1, 3, 9, 7, 8, 8, 8]
+for i in L:
+    L.sort()
+    L.reverse()
+    L.count(i)
+    if L.count(i)>1:
+        L.remove(i)
+print(L)
+
+
+#方法二
+L = [1, 1, 3, 9, 7, 8, 8, 8]
+L = list(set(L)) #用集合去除重複再換成列表
+L.reverse()
+print(L)
